@@ -1,5 +1,4 @@
 # Report functions
-import csv
 import operator
 
 #How many games are in the file? output: a number
