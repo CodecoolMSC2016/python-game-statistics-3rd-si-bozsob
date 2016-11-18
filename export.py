@@ -5,6 +5,9 @@
 import reports
 
 file_name = "game_stat.txt"
+genre = "First-person shooter"
+title = "Counter-Strike"
+
 def export_reports(file_name):
     save_file = open("answers_for_judy.txt", "w")
     save_file.write("1. How many games are in the file?")
@@ -27,15 +30,13 @@ def export_reports(file_name):
     save_file.write("\n")
     save_file.write("4. How many games do we have by genre?")
     save_file.write("\n")
-    save_file.write("\"First-person shooter\": ")
-    save_file.write(str(reports.count_by_genre(file_name, "First-person shooter")))
+    save_file.write(str(reports.count_by_genre(file_name, genre)))
     save_file.write("\n")
 
     save_file.write("\n")
     save_file.write("5. What is the line number of the given game (by title)?")
     save_file.write("\n")
-    save_file.write("Line number of \"Counter-Strike\": ")
-    save_file.write(str(reports.get_line_number_by_title(file_name, "Counter-Strike")))
+    save_file.write(str(reports.get_line_number_by_title(file_name, title)))
     save_file.write("\n")
 
     save_file.write("\n")
