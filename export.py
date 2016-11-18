@@ -59,4 +59,4 @@ def export_reports(file_name):
 
     save_file.close()
 
-export_reports("game_stat.txt")
+export_reports(file_name)
